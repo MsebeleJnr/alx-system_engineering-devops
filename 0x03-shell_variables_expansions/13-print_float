@@ -1,2 +1,2 @@
 #!/bin/bash
-printf '%.2f\n' SNUM
+printf '%.2f\n' $NUM
