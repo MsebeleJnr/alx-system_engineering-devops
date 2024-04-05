@@ -8,4 +8,5 @@ content =>"
 	#SSH client configuration
 	host*
 	PasswordAuthentication no
+	"
 }
