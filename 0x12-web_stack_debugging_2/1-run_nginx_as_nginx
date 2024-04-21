@@ -25,7 +25,7 @@ sed -i 's/^user .*/user nginx;/' /etc/nginx/nginx.conf
 service nginx start
 
 # Verify Nginx is running as nginx user
-ps auxff | grep ngin[x]
+pgrep -u nginx nginx
 
 # Verify Nginx is listening on port 8080
 nc -z 0 8080
