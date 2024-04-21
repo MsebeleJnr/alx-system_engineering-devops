@@ -1,16 +1,4 @@
-#!/usr/bin/env bash
-# Fixes server bug
-chmod 644 /etc/nginx/nginx.conf
-sed -Ei 's/\s*#?\s*user .*/user nginx;/' /etc/nginx/nginx.conf
-sed -Ei 's/(listen (\[::\]:)?80) /\180 /' /etc/nginx/sites-enabled/default
-pkill apache2
-# restart
-su nginx -s /bin/bash -c 'service nginx restart'
-
-# Create nginx user if it does not exist
-if ! getent passwd nginx >/dev/null 2>&1; then
-    useradd -r nginx
-fi
+#!/bin/env bash
 
 # Stop Nginx service
 service nginx stop
@@ -29,4 +17,5 @@ pgrep -u nginx nginx
 
 # Verify Nginx is listening on port 8080
 nc -z 0 8080
+
 
