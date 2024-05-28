@@ -1,0 +1,29 @@
+        +----------------------+
+        | DNS Resolution       |
+        | (Resolve domain name)|
+        +-----------|----------+
+                    |
+                    v
+        +----------------------+
+        |                     +-----> Google Servers (IP Address)
+        |                     |          Port: 443 (HTTPS)
+        |    Firewall         |          (Encrypted Traffic)
+        | (Security Filtering) |
+        +-----------|----------+
+                    |
+                    v
+        +----------------------+
+        |                     +-----> Load Balancer
+        |                     |          (Distribute Traffic)
+        |    Web Server       |
+        |  (Serve Web Pages)  |
+        +-----------|----------+
+                    |
+                    v
+        +----------------------+
+        |                     +-----> Application Server
+        |                     |          (Generate Web Page)
+        |   Database Server   |          
+        |   (Retrieve Data)   |          
+        +----------------------+
+
