@@ -1,3 +1,7 @@
+
+![expd s](https://github.com/user-attachments/assets/796e6dc2-e4fd-4505-823f-77a337006a2a)
+
+
 Issue Summary
 
 Duration:
@@ -59,9 +63,13 @@ Provide additional training for the engineering team on debugging memory-related
 Tasks:
 
  -Patch the session management module in all environments.
+ 
  -Add memory usage alerts specific to session object growth.
+ 
  -Schedule and perform a stress test on the staging environment by September 1, 2024.
+ 
  -Organize a post-incident review meeting and training session by August 30, 2024.
+ 
  -Review and update the on-call playbook to better handle memory-related incidents.
  
 This postmortem provides a detailed analysis of the incident and outlines the necessary steps to prevent a recurrence. By addressing these points, we aim to strengthen our infrastructure and improve our incident response process.
